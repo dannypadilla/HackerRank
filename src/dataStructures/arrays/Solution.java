@@ -25,9 +25,6 @@ public class Solution {
 
 	public static void main(String[] args) {
 		
-//		// Test Input
-//		int[] numList = {2, 3, 4, 1};
-		
 		// For user input
 		Scanner in = new Scanner(System.in);
 		
@@ -35,22 +32,26 @@ public class Solution {
 		int num = Integer.valueOf(in.nextLine() );
 		
 		// Read the second line
-		String numList = in.nextLine();
+		String[] numList = in.nextLine().split(" ");
 		
 		// Initialize an empty string to save the reverse output
 		String reverse = "";
 		
 		
 		// Check if input is not empty
-		if (numList.length() != 0) {
+		if (numList.length != 0) {
 			
-			// Starts at end of input then appends it to rev String
-			for (int i = num  - 1; i >= 0; i-- ) {
-				
-				// Append each char in reverse to the rev string
-				reverse += numList.charAt(i);
-				
-			}			
+			// Starts at end of input then appends it to reverse String
+			for (int i = numList.length - 1; i > 0; i-- ) {
+					
+					// Append each char in reverse to the reverse string
+					reverse += numList[i] + " ";
+			
+			}
+			
+			// Append last element without a space at the end
+			reverse += numList[0];
+			
 		}
 		
 		// Print the reverse string to the console
