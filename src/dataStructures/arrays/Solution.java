@@ -32,28 +32,30 @@ public class Solution {
 		Scanner in = new Scanner(System.in);
 		
 		// Save input line as a string
+		int num = Integer.valueOf(in.nextLine() );
+		
+		// Read the second line
 		String numList = in.nextLine();
 		
+		// Initialize an empty string to save the reverse output
+		String reverse = "";
 		
-		// Initialize an empty string to save the reverse
-		String rev = "";
-		
-		// Starts at end of input then appends it to rev String
-		for (int i = numList.length() - 1; i > 0; i-- ) {
-			
-			// Append each char in reverse to the rev string
-			rev += numList.charAt(i) + " ";
-		}
 		
 		// Check if input is not empty
 		if (numList.length() != 0) {
 			
-			// Add the last char without the space
-			rev += numList.charAt(0);
+			// Starts at end of input then appends it to rev String
+			for (int i = num  - 1; i >= 0; i-- ) {
+				
+				// Append each char in reverse to the rev string
+				reverse += numList.charAt(i);
+				
+			}			
 		}
 		
 		// Print the reverse string to the console
-		System.out.println(rev);
+//		System.out.println(num);
+		System.out.println(reverse);
 		
 		// Close scanner
 		in.close();
