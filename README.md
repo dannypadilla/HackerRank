@@ -6,6 +6,7 @@
 1. Arrays:
   * Arrays - DS
   * 2D Array - DS
+
 ---
 ### Algorithms
 1. Warmup:
