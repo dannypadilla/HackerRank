@@ -1,13 +1,13 @@
 # HackerRank
-===
+---
 ## Solved:
-### Data Structues
-#### Arrays
+### Data Structures
+1. Arrays
 ..* Arrays - DS
 ..* 2D Array - DS
 
 ### Algorithms
-#### Warmup
+1. Warmup
 ..* Solve me First
 ..* Simple Array Sum
 ..* Compare the Triplets
