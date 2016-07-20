@@ -1,6 +1,6 @@
 # HackerRank
 
-### Solved:
+#### Solved Problems
 ---
 ### Data Structures
 1. Arrays:
@@ -13,3 +13,4 @@
   * Solve me First
   * Simple Array Sum
   * Compare the Triplets
+  * A Very Big Sum
