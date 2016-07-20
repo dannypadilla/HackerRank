@@ -31,10 +31,15 @@ import java.util.Scanner;
 public class AVeryBigSum {
 
 	public static void main(String[] args) {
-		
-		// User input
-		Scanner in = new Scanner(System.in);
-		
+		Scanner in = new Scanner(System.in);						// User input
+		String anIntegerN = in.nextLine();							// Read in first line input
+		String[] numsToSum = in.nextLine().split(" ");				// Read second line and split into an array
+		long sum = 0;												// Initialize sum
+		for (int i = 0; i < Integer.valueOf(anIntegerN); i++) {		// Loop through the input array
+			sum += Integer.valueOf(numsToSum[i]);					// Add each value in the array to sum
+		}
+		System.out.println(sum);									// Print the sum value
+		in.close();													// Close the scanner
 	}
 
 }
