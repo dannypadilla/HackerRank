@@ -20,7 +20,29 @@ public class DiagonalDifference {
 
 	public static void main(String[] args) {
 		
-		Scanner in = new Scanner(System.in);						// Prompt for user input
+		Scanner in = new Scanner(System.in); // prompt for user input
+		int n = in.nextInt();
+		int a[][] = new int[n][n]; // set matrix size
+
+		int firstDiagonal = 0; // initialize sums
+		int secondDiagonal = 0; // initia;ize
+
+		for(int i = 0; i < n; i++) { // row
+			for (int j = 0; j < n; j++) { // column
+
+				a[i][j] = in.nextInt();
+				//System.out.print(" (" + i + "," + j + ") ");
+			}
+			//System.out.println("\n");
+		}
+
+		for (int first = 0; first < n; first++) {
+			firstDiagonal += a[first][first];
+			System.out.print(firstDiagonal);
+
+			secondDiagonal += a[first][n - 1 - first];
+			System.out.println(Math.abs(firstDiagonal - secondDiagonal) );
+		}
 		
 	}
 
